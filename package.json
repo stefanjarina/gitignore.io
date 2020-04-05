@@ -1,0 +1,12 @@
+{
+  "name": "gitignore.io",
+  "version": "0.1.0",
+  "description": "Javascript SDK for https://gitignore.io",
+  "main": "index.js",
+  "repository": "https://github.com/stefanjarina/gitignore.io",
+  "author": "Stefan Jarina <stefan@jarina.io>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}
