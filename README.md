@@ -5,9 +5,9 @@ A Javascript SDK for https://gitignore.io
 ## Installation
 
 ```sh
-npm install https://github.com/stefanjarina/gitignore.io
+npm install --save gitignore.io
 # -or-
-yarn add https://github.com/stefanjarina/gitignore.io
+yarn add gitignore.io
 ```
 
 ## Usage
