@@ -12,6 +12,8 @@ yarn add https://github.com/stefanjarina/gitignore.io
 
 ## Usage
 
+Documentation is available [here](./docs/README.md)
+
 - Import library
 
 ```js
@@ -84,9 +86,9 @@ api
 
 ## TODO
 
-- [] Proper error handling
-- [] Rewrite to Typescript
-- [] Add typings
-- [] Add browser support
-- [] Publish to npm
-- [] Add CLI
+- [ ] Proper error handling
+- [x] Rewrite to Typescript
+- [x] Add typings
+- [x] Add browser support
+- [x] Publish to npm
+- [ ] Add CLI
