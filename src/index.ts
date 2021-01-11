@@ -7,10 +7,12 @@ import axios, { AxiosResponse } from 'axios';
 const BASE_URL: string = 'https://www.gitignore.io/api';
 
 export interface GitignoreApiResponse {
-  contents: string;
-  name: string;
-  key: string;
-  fileName: string;
+  [name: string]: {
+    contents: string;
+    name: string;
+    key: string;
+    fileName: string;
+  };
 }
 
 /**
@@ -34,10 +36,10 @@ export const listAll = async () => {
  * Fetches all available config files and their content.
  * @returns Parsed API response.
  */
-export const fetchAll = async () => {
+export const fetchAll = async (): Promise<GitignoreApiResponse> => {
   try {
     const response = await axios.get(`${BASE_URL}/list?format=json`);
-    const data: GitignoreApiResponse[] = response.data;
+    const data: GitignoreApiResponse = response.data;
 
     return data;
   } catch (error) {
