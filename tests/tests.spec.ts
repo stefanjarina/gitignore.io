@@ -8,9 +8,8 @@ import {
 describe('listAll', () => {
   let data: string[];
 
-  beforeAll(async done => {
+  beforeAll(async () => {
     data = await listAll();
-    done();
   });
 
   test('returns at least 100 items', () => {
@@ -25,9 +24,8 @@ describe('listAll', () => {
 describe('fetchAll', () => {
   let data: GitignoreApiResponse;
 
-  beforeAll(async done => {
+  beforeAll(async () => {
     data = await fetchAll();
-    done();
   });
 
   test('returns at least 100 items', () => {
@@ -44,10 +42,9 @@ describe('fetchConfig', () => {
   let data1: string;
   let data2: string;
 
-  beforeAll(async done => {
+  beforeAll(async () => {
     data1 = await fetchConfig(['linux']);
     data2 = await fetchConfig(['linux', 'windows']);
-    done();
   });
 
   test('have at least 50 characters', () => {

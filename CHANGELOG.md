@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.4] - 2021-09-30
+
+Resolve several security vulnerabilities in dependencies. Add this CHANGELOG
+
+### Changed
+
+- upgraded all dependencies to latest versions
+- changed documentation generation
+- change tests so they work with jest-circus
+
 ## [0.1.3] - 2021-01-11
 
 Resolve several security vulnerabilities in dependencies. Add this CHANGELOG

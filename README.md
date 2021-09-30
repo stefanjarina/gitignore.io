@@ -1,6 +1,6 @@
 # gitignore.io
 
-A Javascript SDK for https://gitignore.io
+A Javascript SDK for [https://gitignore.io](https://gitignore.io)
 
 ## Installation
 
@@ -24,7 +24,7 @@ const api = require('gitignore.io');
   - Returns an `Array` of config names
 
 ```js
-api.listAll().then((list) => console.log(list));
+api.listAll().then(list => console.log(list));
 
 // returns
 //
@@ -40,7 +40,7 @@ api.listAll().then((list) => console.log(list));
   - Returns an `Object` of all configs
 
 ```js
-api.fetchAll().then((allConfigs) => console.log(allConfigs));
+api.fetchAll().then(allConfigs => console.log(allConfigs));
 
 // returns
 //
@@ -64,9 +64,7 @@ api.fetchAll().then((allConfigs) => console.log(allConfigs));
   - Returns a `String` of config
 
 ```js
-api
-  .fetchConfig(['node', 'code', 'linux'])
-  .then((config) => console.log(config));
+api.fetchConfig(['node', 'code', 'linux']).then(config => console.log(config));
 
 // returns
 //
