@@ -30,7 +30,7 @@ Parsed API response.
 
 #### Defined in
 
-[index.ts:39](https://github.com/stefanjarina/gitignore.io/blob/e87a512/src/index.ts#L39)
+[index.ts:39](https://github.com/stefanjarina/gitignore.io/blob/5763091/src/index.ts#L39)
 
 ___
 
@@ -52,7 +52,7 @@ Fetches concated .gitignore config.
 
 #### Defined in
 
-[index.ts:54](https://github.com/stefanjarina/gitignore.io/blob/e87a512/src/index.ts#L54)
+[index.ts:54](https://github.com/stefanjarina/gitignore.io/blob/5763091/src/index.ts#L54)
 
 ___
 
@@ -68,4 +68,4 @@ Lists all keywords supported by [gitignore.io](https://gitignore.io).
 
 #### Defined in
 
-[index.ts:21](https://github.com/stefanjarina/gitignore.io/blob/e87a512/src/index.ts#L21)
+[index.ts:21](https://github.com/stefanjarina/gitignore.io/blob/5763091/src/index.ts#L21)
