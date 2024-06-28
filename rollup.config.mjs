@@ -1,5 +1,6 @@
+import { readFileSync } from 'fs';
 import typescript from 'rollup-plugin-typescript2';
-import pkg from './package.json';
+const pkg = JSON.parse(readFileSync('./package.json'));
 
 export default {
   input: 'src/index.ts',
@@ -17,9 +18,5 @@ export default {
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.peerDependencies || {}),
   ],
-  plugins: [
-    typescript({
-      typescript: require('typescript'),
-    }),
-  ],
+  plugins: [typescript()],
 };

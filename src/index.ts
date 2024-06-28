@@ -42,7 +42,7 @@ export const fetchAll = async (): Promise<GitignoreApiResponse> => {
     const data: GitignoreApiResponse = response.data;
 
     return data;
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(error);
   }
 };
